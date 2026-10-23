@@ -20,9 +20,7 @@ if __name__ == "__main__":
         "SELECT * FROM states ORDER BY states.id ASC"
     )
 
-    states = cursor.fetchall()
-
-    for state in states:
+    for state in cursor.fetchall():
         print(state)
 
     cursor.close()
